@@ -10,10 +10,10 @@ module.exports.run = async (bot, message, args) => {
     //.addField("Created On", message.guild.createdAt)
     //.addField("You Joined", message.member.joinedAt)
     //.addField("Total Members", message.guild.memberCount);
-    message.channel.send("**Server name:** ${message.guild.name}");
-    message.channel.send("**Created On:** ${message.guild.createdAt}");
-    message.channel.send("**You Joined:** ${message.member.joinedAt}");
-    message.channel.send("**Total Members:** ${message.guild.memberCount}");
+    message.channel.send("**Server name:**", message.guild.name);
+    message.channel.send("**Created On:**", message.guild.createdAt);
+    message.channel.send("**You Joined:**", message.member.joinedAt);
+    message.channel.send("**Total Members:**", message.guild.memberCount);
 
     //return message.channel.send(serverembed);
 }
